@@ -1,8 +1,8 @@
 const mysql = require('mysql2');
 const db = mysql.createConnection({
-    host:"localhost",
-    user:"root",
-    password:"",
-    database:"db_react_demo"
+    host:"n1nlmysql57plsk.secureserver.net",
+    user:"demodatabase",
+    password:"h805hMk9#",
+    database:"demodatabase"
 })
 module.exports=db;
