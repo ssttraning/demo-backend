@@ -5,7 +5,9 @@ const app = express()
 const port = 3000 || process.env.port
 
 // middleware FIRST
-app.use(cors())
+app.use(cors({
+    origin:"http://demoproject.santhisoft.com/"
+}))
 app.use(express.json())
 
 //  routes
