@@ -6,7 +6,10 @@ const port = 3000 || process.env.port
 
 // middleware FIRST
 app.use(cors({
-    origin:"http://demoproject.santhisoft.com/"
+    origin:[
+        "http://localhost:5173",
+        "https://demoproject.santhisoft.com/"
+    ]
 }))
 app.use(express.json())
 
