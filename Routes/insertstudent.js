@@ -4,6 +4,8 @@ const router = express.Router();
 
 
 router.post('/',(req,res)=>{
+    console.log(req.body);
+    
     const name = req.body.name;
     const email = req.body.email;
     const course = req.body.course;
